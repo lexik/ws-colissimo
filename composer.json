@@ -1,0 +1,27 @@
+{
+    "name": "lexik/ws-colissimo",
+    "type": "library",
+    "description": "A library for consuming the SOAP WSColiPosteLetterService",
+    "keywords": ["colissimo", "webservice", "coliposteletterservice"],
+    "homepage": "https://github.com/lexikteam/ws-colissimo",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nicolas Cabot",
+            "email": "n.cabot@lexik.fr"
+        },
+        {
+            "name": "Dev Lexik",
+            "email": "dev@lexik.fr"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+        "symfony/validator": "2.1.x"
+    },
+    "autoload": {
+        "psr-0": {
+            "WSColissimo\\WSColiPosteLetterService": "src"
+        }
+    }
+}

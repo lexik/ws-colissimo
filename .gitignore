@@ -1,0 +1,9 @@
+.buildpath
+.project
+.settings/
+
+sample/parameters.php
+composer.lock
+
+vendor
+report
