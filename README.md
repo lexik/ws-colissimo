@@ -12,6 +12,23 @@ it will simply not work. Also, note that currently only the production mode is w
 Nb: The structure of this library is heavily inspired by the 
 [PHPForce Soap Client](https://github.com/phpforce/soap-client).
 
+## Installation - using composer
+
+Add the library to your `composer.json` :
+
+```
+{
+    "require": {
+        "lexik/ws-colissimo": "dev-master"
+    }
+}
+```
+Install it by running the command :
+
+```
+php composer.phar update lexik/ws-colissimo
+```
+
 ## Usage
 
 ### Standalone
