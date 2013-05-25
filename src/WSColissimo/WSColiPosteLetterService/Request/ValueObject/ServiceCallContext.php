@@ -485,7 +485,7 @@ class ServiceCallContext
 
         $metadata->addPropertyConstraint('commercialName', new Assert\NotBlank());
         $metadata->addPropertyConstraint('commercialName', new Assert\Type(array('type' => 'string')));
-        $metadata->addPropertyConstraint('commercialName', new Assert\MaxLength(array('limit' => 38)));
+        $metadata->addPropertyConstraint('commercialName', new Assert\Length(array('max' => 38)));
     }
 
     /**

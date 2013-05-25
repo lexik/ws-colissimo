@@ -407,32 +407,32 @@ class Address
     public static function loadValidatorMetadata(ClassMetadata $metadata)
     {
         $metadata->addPropertyConstraint('companyName', new Assert\Type(array('type' => 'string')));
-        $metadata->addPropertyConstraint('companyName', new Assert\MaxLength(array('limit' => 35)));
+        $metadata->addPropertyConstraint('companyName', new Assert\Length(array('max' => 35)));
 
         $metadata->addPropertyConstraint('civility', new Assert\Type(array('type' => 'string')));
-        $metadata->addPropertyConstraint('civility', new Assert\MaxLength(array('limit' => 4)));
+        $metadata->addPropertyConstraint('civility', new Assert\Length(array('max' => 4)));
 
         $metadata->addPropertyConstraint('name', new Assert\Type(array('type' => 'string')));
-        $metadata->addPropertyConstraint('name', new Assert\MaxLength(array('limit' => 35)));
+        $metadata->addPropertyConstraint('name', new Assert\Length(array('max' => 35)));
 
         $metadata->addPropertyConstraint('surname', new Assert\Type(array('type' => 'string')));
-        $metadata->addPropertyConstraint('surname', new Assert\MaxLength(array('limit' => 29)));
+        $metadata->addPropertyConstraint('surname', new Assert\Length(array('max' => 29)));
 
         $metadata->addPropertyConstraint('email', new Assert\Type(array('type' => 'string')));
         $metadata->addPropertyConstraint('email', new Assert\Email());
 
         $metadata->addPropertyConstraint('line0', new Assert\Type(array('type' => 'string')));
-        $metadata->addPropertyConstraint('line0', new Assert\MaxLength(array('limit' => 35)));
+        $metadata->addPropertyConstraint('line0', new Assert\Length(array('max' => 35)));
 
         $metadata->addPropertyConstraint('line1', new Assert\Type(array('type' => 'string')));
-        $metadata->addPropertyConstraint('line1', new Assert\MaxLength(array('limit' => 35)));
+        $metadata->addPropertyConstraint('line1', new Assert\Length(array('max' => 35)));
 
         $metadata->addPropertyConstraint('line2', new Assert\Type(array('type' => 'string')));
         $metadata->addPropertyConstraint('line2', new Assert\NotBlank());
-        $metadata->addPropertyConstraint('line2', new Assert\MaxLength(array('limit' => 35)));
+        $metadata->addPropertyConstraint('line2', new Assert\Length(array('max' => 35)));
 
         $metadata->addPropertyConstraint('line3', new Assert\Type(array('type' => 'string')));
-        $metadata->addPropertyConstraint('line3', new Assert\MaxLength(array('limit' => 35)));
+        $metadata->addPropertyConstraint('line3', new Assert\Length(array('max' => 35)));
 
         $metadata->addPropertyConstraint('phone', new Assert\Regex(array('pattern' => '/^[0-9]{0,15}$/')));
         $metadata->addPropertyConstraint('mobileNumber', new Assert\Regex(array('pattern' => '/^[0-9]{0,10}$/')));
@@ -445,7 +445,7 @@ class Address
 
         $metadata->addPropertyConstraint('city', new Assert\Type(array('type' => 'string')));
         $metadata->addPropertyConstraint('city', new Assert\NotBlank());
-        $metadata->addPropertyConstraint('city', new Assert\MaxLength(array('limit' => 35)));
+        $metadata->addPropertyConstraint('city', new Assert\Length(array('max' => 35)));
 
         $metadata->addPropertyConstraint('postalCode', new Assert\NotBlank());
         $metadata->addPropertyConstraint('postalCode', new Assert\Regex(array('pattern' => '/^[a-zA-Z0-9]{5}$/')));

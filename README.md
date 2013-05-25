@@ -3,13 +3,13 @@ WSColiPosteLetterService Client Library
 
 ## Introduction
 
-This library is a client for the SOAP 
+This library provides a client for the SOAP 
 [WSColiPosteLetterService](https://www.coliposte.fr/pro/docs/docutheque/divers/socolissimo/integrationwsshipping.pdf).
 
 Access to the WSColiPosteLetterService must be contracted with "La Poste" beforehand or 
 it will simply not work. Also, note that currently only the production mode is working.
 
-Nb: The structure of this library is heavily inspired by the 
+Nb: The structure of this library is based on 
 [PHPForce Soap Client](https://github.com/phpforce/soap-client).
 
 ## Installation - using composer

@@ -423,7 +423,7 @@ class Parcel
         $metadata->addPropertyConstraint('returnReceipt', new Assert\False());
         $metadata->addPropertyConstraint('recommendation', new Assert\False());
 
-        $metadata->addPropertyConstraint('instructions', new Assert\MaxLength(array('limit' => 70)));
+        $metadata->addPropertyConstraint('instructions', new Assert\Length(array('max' => 70)));
     }
 
     /**
