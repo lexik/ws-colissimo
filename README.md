@@ -1,6 +1,8 @@
 WSColiPosteLetterService Client Library
 =======================================
 
+![Project Status](http://stillmaintained.com/lexik/ws-colissimo.png)
+
 ## Introduction
 
 This library provides a client for the SOAP 
